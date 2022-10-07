@@ -1,3 +1,8 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -5,8 +10,7 @@
   height: 50px;
   padding: 0 15px;
   
-background: #F5F5F5;
-border: 1px solid #E5E5E5;
+
 }
 .nav__logo {
   width: 111px;
@@ -16,7 +20,7 @@ border: 1px solid #E5E5E5;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-
+  margin-left: 15px;
   color: var(--primary-text-color);
 }
 .nav__pre-heder {
@@ -45,11 +49,16 @@ border: 1px solid #E5E5E5;
   display: none;
 }
 @media screen and (min-width: 768px) {
+  .header{
+    display: block;
+  }
   .container {
   }
   .nav {
     display: block;
     height: auto;
+    background: #F5F5F5;
+border: 1px solid #E5E5E5;
   }
   .nav__pre-heder {
     width: 100%;

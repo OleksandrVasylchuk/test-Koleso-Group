@@ -3,6 +3,7 @@
     background: #FAFAFA;
     padding: 11px 10px 20px;
   }
+  margin-bottom: 50px;
 }
 
 .reviews__box {
@@ -59,12 +60,14 @@
   align-items: center;
   justify-content: space-between;
 }
-.bookmakers__link {
+.reviews .bookmakers__link {
+  margin: 0;
 }
+.reviews .reviews__contsiner-dark {
+  padding-bottom: 0;
+    }
 @media screen and (min-width: 768px) {
-  .reviews .reviews__contsiner-dark {
-padding-bottom: 0;
-  }
+  
   .reviews .bookmakers__link{
     margin: 0;
   }
