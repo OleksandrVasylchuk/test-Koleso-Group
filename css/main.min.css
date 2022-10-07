@@ -77,6 +77,9 @@ svg {
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  padding: 0 15px;
+  background: #F5F5F5;
+  border: 1px solid #E5E5E5;
 }
 
 .nav__logo {
@@ -111,6 +114,7 @@ svg {
 .burger-menu_button {
   margin-right: 26px;
   border: none;
+  background: transparent;
 }
 
 .nav__serth-svg {
@@ -216,9 +220,10 @@ svg {
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 6px 0;
     margin: 0 auto;
+    min-width: 690px;
   }
   .burger-menu__list {
     display: flex;
@@ -241,9 +246,6 @@ svg {
   }
   .burger-menu_link.last {
     display: none;
-  }
-  .youtube {
-    margin-left: 102px;
   }
   .nav__youtube-link {
     display: flex;
@@ -291,6 +293,9 @@ svg {
     align-items: center;
     justify-content: space-between;
   }
+  .nav__burger-menu {
+    min-width: 1100px;
+  }
   .nav__burger-serth {
     width: 1140px;
     justify-content: space-between;
@@ -303,9 +308,6 @@ svg {
   }
   .burger-menu_link.last {
     display: inline;
-  }
-  .youtube {
-    margin-left: 270px;
   }
   .play {
     box-sizing: border-box;
@@ -343,9 +345,11 @@ svg {
   top: 0;
   right: 0;
   bottom: 0;
+  width: 100vh;
+  height: 100vw;
   overflow: hidden;
   /* фоновый цвет */
-  background-image: linear-gradient(15deg, var(--accent-color-blue) 0%, var(--accent-color) 100%);
+  background: #000;
   color: var(--accent-color-green);
   z-index: 10000;
 }
@@ -446,6 +450,10 @@ svg {
   }
 }
 
+.bookmaker {
+  position: relative;
+}
+
 .bookmaker > div {
   display: flex;
   background-color: transparent;
@@ -493,9 +501,25 @@ svg {
   margin-right: 8px;
 }
 
+.bookmaker-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 44px;
+  background: linear-gradient(180deg, #B2B7BA 0%, rgba(196, 196, 196, 0) 100%);
+  transform: rotate(90deg);
+}
+
 @media screen and (min-width: 768px) {
   .bookmaker > div {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+    background: #F5F5F5;
+    border: 1px solid #E5E5E5;
+  }
+  .bookmaker bookmaker-gradient {
+    display: none;
   }
 }
 
@@ -508,6 +532,9 @@ svg {
   }
   .bookmaker > div {
     padding: 0;
+    overflow-x: hidden;
+    background: transparent;
+    border: none;
   }
   .bookmaker__link {
     height: 35px;
@@ -523,7 +550,7 @@ svg {
 }
 
 .bonus__container {
-  width: 345px;
+  width: 384px;
   margin: 0 auto;
 }
 
@@ -531,16 +558,25 @@ svg {
   display: none;
 }
 
+.bonus__container-text {
+  border: 1px solid #E0E0E0;
+}
+
 .bonus__container-text-box {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+}
+
+.container-text-box {
+  background: #FAFAFA;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 15px 20px;
 }
 
 .container-text__welcome {
   width: 133px;
   height: 25px;
-  margin: 15px 0;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -560,10 +596,14 @@ svg {
 .container-text__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 22px;
   text-align: center;
   color: #242526;
+}
+
+.bonus__container-description {
+  padding: 15px 20px;
 }
 
 .container-description {
@@ -587,12 +627,9 @@ svg {
 }
 
 .secont-colon {
-  display: table;
-  width: 100%;
-}
-
-.secont-colon .container-description__box {
-  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 15px;
 }
 
 .third-colon {
@@ -600,7 +637,14 @@ svg {
 }
 
 .bonus__container-link {
-  margin: 15px 0 20px;
+  padding: 0 20px 14px;
+}
+
+.bonus__terms-receipt {
+  padding: 21px 20px;
+  margin-bottom: 35px;
+  background: #FAFAFA;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .container-link__button {
@@ -619,7 +663,9 @@ svg {
 }
 
 .container-link__button.last {
+  box-sizing: border-box;
   height: 35px;
+  width: 344px;
   background: var(--accent-color-red);
   border: 2px solid #f83030;
   border-radius: 3px;
@@ -641,7 +687,6 @@ svg {
 }
 
 .terms-receipt__description {
-  margin-bottom: 56px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -656,10 +701,13 @@ svg {
   .bonus__container > div {
     display: flex;
   }
+  .container-text-box {
+    border: none;
+    padding: 15px 10px 0;
+  }
   .bonus__container-pictures {
     position: relative;
     display: block;
-    margin-right: 15px;
   }
   .bonus__container-pictures > div {
     box-sizing: border-box;
@@ -698,18 +746,35 @@ svg {
     text-align: center;
     color: #ffffff;
   }
+  .bonus__container-text {
+    background: #FAFAFA;
+    border: 1px solid #E0E0E0;
+  }
   .bonus__container-text-box {
-    margin-bottom: 21px;
+    position: relative;
+    padding-bottom: 10px;
+    background: #FAFAFA;
+  }
+  .bonus__container-text-box:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    height: 1px solid #E0E0E0;
+    width: 530px;
+    border-bottom: 1px solid #E0E0E0;
   }
   .container-text__welcome {
     background: var(--accent-color-green);
-    margin: 15px 0 10px;
+    margin: 0 0 10px;
   }
   .container-pictures__img-mobile {
     display: none;
   }
   .bonus__container-description {
     display: flex;
+    background: #FFFFFF;
+    padding: 11px 15px;
   }
   .container-description {
     display: block;
@@ -741,7 +806,8 @@ svg {
   }
   .bonus__container-link {
     display: flex;
-    margin: 11px 0 15px;
+    background: #fff;
+    padding: 0 15px;
   }
   .container-link__button {
     display: flex;
@@ -781,7 +847,8 @@ svg {
     height: 30px;
   }
   .bonus__terms-receipt {
-    margin: 7px 0 41px;
+    margin-bottom: 30px;
+    padding: 7px 15px 11px;
   }
   .terms-receipt__description {
     display: none;
@@ -797,6 +864,10 @@ svg {
     margin: 0 auto;
     width: 1140px;
   }
+}
+
+.bookmakers .container-dark {
+  background: #FAFAFA;
 }
 
 .bookmakers__title {
@@ -816,6 +887,7 @@ svg {
 
 .bookmakers__title-box {
   border-bottom: 1px solid #000000;
+  background: #ffffff;
 }
 
 .bookmakers__container {
@@ -894,18 +966,23 @@ svg {
   margin-right: 5.5px;
 }
 
+.bookmakers__container-link {
+  padding: 0 20px;
+}
+
 .bookmakers__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin: 15px 0 30px 0;
+  padding: 15px 0 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 138%x;
   text-align: center;
   color: #242526;
+  border-top: 1px solid #E0E0E0;
 }
 
 .bookmakers__link svg {
@@ -930,11 +1007,23 @@ svg {
   }
 }
 
+.reviews .reviews__contsiner-dark {
+  background: #FAFAFA;
+  padding: 11px 10px 20px;
+}
+
 .reviews__box {
   position: relative;
   box-sizing: border-box;
-  margin-top: 32px;
-  padding: 0px 20px 19px;
+  margin-top: 10px;
+  padding: 22px 20px 19px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+}
+
+.reviews__box .bookmakers__description-reting {
+  top: 16px;
+  right: 10px;
 }
 
 .reviews__title {
@@ -983,10 +1072,22 @@ svg {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .reviews .reviews__contsiner-dark {
+    padding-bottom: 0;
+  }
+  .reviews .bookmakers__link {
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 1140px) {
   .reviews .container {
     min-width: 360px;
     max-width: 360px;
+  }
+  .reviews__box {
+    margin: 0;
   }
 }
 

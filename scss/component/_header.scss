@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  padding: 0 15px;
+  
+background: #F5F5F5;
+border: 1px solid #E5E5E5;
 }
 .nav__logo {
   width: 111px;
@@ -32,6 +36,7 @@
 .burger-menu_button {
   margin-right: 26px;
   border: none;
+  background: transparent;
 }
 .nav__serth-svg {
   fill: #9a9d9f;
@@ -142,9 +147,10 @@
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 6px 0;
     margin: 0 auto;
+    min-width: 690px;
   }
   .burger-menu__list {
     display: flex;
@@ -170,9 +176,7 @@
   .burger-menu_link.last {
     display: none;
   }
-  .youtube {
-    margin-left: 102px;
-  }
+  
   .nav__youtube-link {
     display: flex;
     align-items: center;
@@ -222,6 +226,9 @@
     align-items: center;
     justify-content: space-between;
   }
+  .nav__burger-menu{
+    min-width: 1100px;
+  }
   .nav__burger-serth {
     width: 1140px;
     justify-content: space-between;
@@ -235,9 +242,7 @@
   .burger-menu_link.last {
     display: inline;
   }
-  .youtube {
-    margin-left: 270px;
-  }
+  
   .play {
     box-sizing: border-box;
     display: flex;
