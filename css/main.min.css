@@ -528,10 +528,13 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px 0 48px;
+    padding: 15px 0;
+    margin-bottom: 33px;
+    background: #F5F5F5;
   }
   .bookmaker > div {
     padding: 0;
+    margin: 0;
     overflow-x: hidden;
     background: transparent;
     border: none;
@@ -1038,7 +1041,7 @@ svg {
   margin: 15px 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14.5px;
   line-height: 150%;
   color: #242526;
 }
