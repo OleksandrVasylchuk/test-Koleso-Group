@@ -60,11 +60,9 @@
   }
 }
 .secont-colon {
-  display: table;
-  width: 100%;
-  .container-description__box {
-    float: right;
-  }
+  display: flex;
+  flex-direction: row-reverse;
+  
 }
 .third-colon {
   display: none;
