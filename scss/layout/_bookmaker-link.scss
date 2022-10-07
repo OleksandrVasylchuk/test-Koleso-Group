@@ -1,0 +1,75 @@
+.bookmaker {
+  > div {
+    display: flex;
+    background-color: transparent;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+  }
+}
+.bookmaker__link {
+  box-sizing: border-box;
+  scroll-snap-type: x mandatory;
+  display: inline-flex;
+  -webkit-overflow-scrolling: touch;
+  padding: 13px 20px;
+  width: max-content;
+  flex-wrap: nowrap !important;
+  background: #e3e4e5;
+  border: 1px solid #b2b7ba;
+  &.active {
+    opacity: 0.5;
+  }
+  &:hover {
+    background: rgba(30, 136, 229, 0.1);
+    border: 1px solid #1e88e5;
+    border-radius: 5px;
+  }
+  span {
+    width: max-content;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #3f4143;
+  }
+  img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bookmaker {
+    > div {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bookmaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 48px;
+    > div {
+      padding: 0;
+    }
+  }
+  .bookmaker__link {
+    height: 35px;
+    background: #e3e4e5;
+    border: 1px solid #b2b7ba;
+    border-radius: 5px;
+    margin-right: 15px;
+    padding: 8px 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

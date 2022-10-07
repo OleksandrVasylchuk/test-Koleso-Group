@@ -1,0 +1,21 @@
+:root {
+  --background-grabient: linear-gradient(
+    180deg,
+    rgba(6, 8, 9, 0) 75%,
+    #000000 99.92%,
+    #060809 99.93%,
+    rgba(204, 204, 204, 0.686417) 99.94%,
+    rgba(177, 177, 177, 0.729419) 99.95%,
+    #060809 99.96%,
+    rgba(0, 0, 0, 0.533801) 99.97%,
+    #060809 99.98%
+  );
+  --link-color: #1e88e5;
+  --primary-text-color: #242526;
+  --accent-color-red: #f83030;
+  --accent-color-blue: #1e88e5;
+  --accent-color-green: #2f8f41;
+  --background-color: #000000;
+  --active-color: #3f4143;
+  --primary-white-color: #fff;
+}

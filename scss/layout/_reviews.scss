@@ -1,0 +1,65 @@
+.reviews {
+}
+.container {
+}
+.bookmakers__title {
+}
+.reviews__box {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 32px;
+  padding: 0px 20px 19px;
+}
+.reviews__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 117%;
+  color: #242526;
+}
+.bookmakers__description-reting {
+}
+.reviews__description {
+  margin: 15px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #242526;
+  a {
+    display: inline;
+    text-decoration: underline;
+    color: #1e88e5;
+  }
+}
+.reviews__user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: #999999;
+  svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+  }
+}
+.reviews__user-deskription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookmakers__link {
+}
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1140px) {
+  .reviews .container {
+    min-width: 360px;
+    max-width: 360px;
+  }
+}

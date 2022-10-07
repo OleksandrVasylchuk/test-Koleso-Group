@@ -1,0 +1,13 @@
+@import "./base/_base.scss";
+@import "./base/_container.scss";
+
+@import "./component/header";
+@import "./component/preloader";
+
+@import "./layout/hero";
+@import "./layout/bookmaker-link";
+@import "./layout/bonus";
+@import "./layout/bookmakers";
+@import "./layout/reviews";
+
+@import "utilc/_variables.scss";

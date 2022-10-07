@@ -1,0 +1,125 @@
+.bookmakers {
+}
+.container {
+}
+.bookmakers__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 174px;
+  height: 35px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 269%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #121212;
+}
+.bookmakers__title-box {
+  border-bottom: 1px solid #000000;
+}
+.bookmakers__container {
+  padding: 0 20px;
+  margin-top: 20px;
+  display: flex;
+}
+.bookmakers__img {
+  width: 100px;
+  height: 80px;
+  margin-right: 15px;
+}
+.bookmakers__description {
+  position: relative;
+}
+.bookmakers__description-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #242526;
+}
+.bookmakers__description-bonus {
+  margin: 6px 0 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  color: #9a9d9f;
+}
+.bookmakers__description-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 229px;
+  height: 30px;
+  background: var(--accent-color-green);
+  border: 1px solid var(--accent-color-green);
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.bookmakers__description-reting {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #faab00;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 117%;
+  text-align: center;
+
+  color: #ffffff;
+  svg {
+    width: 17px;
+    height: 17px;
+    margin-right: 5.5px;
+  }
+}
+.bookmakers__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 138%x;
+  text-align: center;
+  color: #242526;
+  svg {
+    width: 8px;
+    height: 14px;
+    margin-left: 9px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .bookmakers__description {
+    width: 100%;
+  }
+  .bookmakers__description-link {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bookmakers .container {
+    min-width: 360px;
+    max-width: 360px;
+  }
+}
